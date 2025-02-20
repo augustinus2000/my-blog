@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+ruby "3.2.2"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.2.2", ">= 7.2.2.1"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
@@ -34,7 +35,6 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
-
   # Use sqlite3 as the database for Active Record
   gem "sqlite3", ">= 1.4"
 
@@ -46,11 +46,10 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
-
 end
 
 group :production do
-  gem 'pg'
+  gem "pg"
 end
 
 

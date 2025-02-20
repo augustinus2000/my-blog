@@ -3,4 +3,4 @@ Rails.application.routes.draw do
   get "about", to: "pages#about" # PagesCOntroller의 about 액션 실행
 
   root "pages#home"
-end  
+end
