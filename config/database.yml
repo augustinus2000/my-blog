@@ -19,7 +19,6 @@ test:
   database: storage/test.sqlite3
 
 
-
 production:
   <<: *default
   adapter : postgresql
