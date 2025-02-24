@@ -1,6 +1,6 @@
 # my-blog
 
-基本的な枠組みは、以下のURLのガイドラインを模倣しました。
+基本的な枠組みは、下記URLのガイドラインどおりに構築しました。
 
 https://medium.com/jungletronics/a-rails-blog-in-vs-code-quick-start-5c3173191a64
 
