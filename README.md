@@ -1,6 +1,4 @@
-# README
-
-## my-blog
+# my-blog
 
 基本的な枠組みは、以下のURLのガイドラインを模倣しました。
 
@@ -26,4 +24,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-# my-blog
+
