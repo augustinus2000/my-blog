@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
     before_action :set_post
   
     def create
-      @post = Post.find(params[:post_id])
+      # @post = Post.find(params[:post_id])
       
       @comment = if params[:comment][:parent_id].present?
                    parent_comment = Comment.find(params[:comment][:parent_id])
