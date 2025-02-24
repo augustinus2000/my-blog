@@ -1,8 +1,38 @@
-<%= render @post %>
+<div class="post-container">
+  <div class="post-header">
+    <h1><%= @post.title %></h1>
+    <p class="post-meta">Posted by <%= @post.user.name %> | <%= time_ago_in_words(@post.created_at) %> ago</p>
+    <p><strong>Category:</strong> <%= @post.category %></p> <%# 카테고리 %>
+  </div>
 
-<div>
-  <%= link_to "Edit this post", edit_post_path(@post) %> |
-  <%= link_to "Back to posts", posts_path %>
+  <div class="post-body">
+    <%= raw @post.body %> <%# Rich Text 출력 (이미지 포함) %>
+  </div>
 
-  <%= button_to "Destroy this post", @post, method: :delete %>
+  <div class="post-actions">
+    <% if @post.user == current_user %>
+      <%= link_to "✏ Edit", edit_post_path(@post), class: "btn btn-edit" %>
+      <%= button_to "🗑 Delete", @post, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-delete" %>
+    <% end %>
+    <%= link_to "← Back to posts", posts_path, class: "btn btn-back" %>
+  </div>
 </div>
+
+
+<div class="comments-section">
+  <h2>Comments</h2>
+
+  <% if @comments.any? %>
+    <div class="comments-list">
+      <% @comments.each do |comment| %>
+        <%= render 'comments/comment', post: @post, comment: comment %>
+      <% end %>
+    </div>
+  <% else %>
+    <p>No comments yet. Be the first to comment!</p>
+  <% end %>
+
+  <h3>Add a Comment</h3>
+  <%= render 'comments/form', post: @post %>
+</div>
+

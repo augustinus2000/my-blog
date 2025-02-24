@@ -1,14 +1,46 @@
-<% content_for :title, "Posts" %>
-
 <h1>Posts</h1>
 
-<div id="posts">
-  <% @posts.each do |post| %>
-    <%= render post %>
-    <p>
-      <%= link_to "Show this post", post %>
-    </p>
+<!-- ✅ 검색 폼 -->
+<div class="mb-3">
+  <%= form_with url: posts_path, method: :get, local: true, class: "d-flex gap-2" do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search by title or user", class: "form-control" %>
+    <%= submit_tag "Search", class: "btn btn-primary" %>
   <% end %>
 </div>
 
-<%= link_to "New post", new_post_path %>
+<!-- ✅ 카테고리 선택 필터 -->
+<div class="mb-3">
+  <%= form_with url: posts_path, method: :get, local: true do %>
+    <label for="category-filter">Filter by Category:</label>
+    <%= select_tag :category_id, options_for_select([["All", ""]] + Post::CATEGORIES.map { |c| [c, c] }, params[:category_id]), class: "form-control", id: "category-filter", onchange: "this.form.submit();" %>
+  <% end %>
+</div>
+
+<!-- ✅ 게시글 목록 -->
+<div class="posts-container">
+  <% if @posts.any? %> 
+    <% @posts.each do |post| %>
+      <div class="post-card">
+        <h2><%= post.title %></h2>
+        <p class="post-meta">Posted by <span class="post-user"><%= post.user.name %></span></p>
+        <p class="views"><%= pluralize(post.views, "view") %></p>
+
+        <% if post.body.embeds.attached? %>
+          <div class="post-thumbnail">
+            <%= image_tag post.body.embeds.first, class: "thumbnail" %>
+          </div>
+        <% end %>
+
+        <%= link_to "Read more", post, class: "read-more" %>
+      </div>
+    <% end %>
+  <% else %>
+    <!-- ✅ 검색 결과 없을 경우 표시 -->
+    <p class="alert alert-warning">No posts found matching your search criteria.</p>
+  <% end %>
+</div>
+
+<!-- ✅ 페이지네이션 추가 -->
+<div class="pagination">
+  <%= paginate @posts %>
+</div>

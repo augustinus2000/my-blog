@@ -21,4 +21,4 @@ test:
 
 production:
   <<: *default
-  adapter : postgresql
+  adapter: postgresql
