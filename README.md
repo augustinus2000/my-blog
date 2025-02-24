@@ -1,5 +1,7 @@
 # README
+
 基本的な枠組みは、以下のURLのガイドラインを模倣しました。
+
 https://medium.com/jungletronics/a-rails-blog-in-vs-code-quick-start-5c3173191a64
 
 
