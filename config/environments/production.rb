@@ -95,6 +95,9 @@ Rails.application.configure do
   # Only use :id for inspections in production.
   config.active_record.attributes_for_inspect = [ :id ]
 
+  # RAILS_MASTER_KEY를 사용하지 않고 SECRET_KEY_BASE 직접 설정
+  Rails.application.config.secret_key_base = ENV["SECRET_KEY_BASE"]
+
   # Enable DNS rebinding protection and other `Host` header attacks.
   # config.hosts = [
   #   "example.com",     # Allow requests from example.com
