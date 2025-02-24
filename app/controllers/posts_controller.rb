@@ -4,33 +4,25 @@ class PostsController < ApplicationController
   before_action :authorize_user!, only: %i[edit update destroy] # checking authorization
 
   def index
-    @categories = Post::CATEGORIES # ✅ 한 곳에서 정의된 카테고리 사용
-    # ✅ 검색 기능 추가
-    @posts = Post.includes(:user).order(created_at: :desc) # ✅ 성능 개선을 위해 includes 사용
-
-    # ✅ 검색 기능 (게시글 제목 & 사용자 이름)
+    @categories = Post::CATEGORIES
+    @posts = Post.includes(:user).order(created_at: :desc)
+  
+    # 検索機能(검색 기능)
     if params[:search].present?
       search_query = "%#{params[:search]}%"
       Rails.logger.info "🔎 검색어: #{search_query}"
-      @posts = @posts.joins(:user).where("CAST(posts.title AS TEXT) LIKE ? OR users.name LIKE ?", search_query, search_query)
-      Rails.logger.info "🔎 SQL 실행 완료!"
+      @posts = @posts.joins(:user).where("posts.title LIKE ? OR users.name LIKE ?", search_query, search_query)
     end
-    
-    
-    # ✅ 카테고리 필터링 유지
+  
+    # ✅ 카테고리 필터링 적용
     if params[:category_id].present? && @categories.include?(params[:category_id])
       @posts = @posts.where(category: params[:category_id])
     end
-    
-    # ✅ 카테고리 필터링 적용
-    @posts = if params[:category_id].present? && @categories.include?(params[:category_id])
-               Post.where(category: params[:category_id])
-             else
-               Post.all
-             end
-
-    @posts = @posts.order(created_at: :desc).page(params[:page]).per(6) # ✅ 페이지네이션 유지
+  
+    # ✅ 최종적으로 정렬 및 페이지네이션 적용
+    @posts = @posts.order(created_at: :desc).page(params[:page]).per(6)
   end
+  
 
   def show
     @post.update(views: @post.views + 1)
