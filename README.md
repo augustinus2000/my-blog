@@ -156,4 +156,21 @@ railway up
 環境変数を設定する手順が追加される場合があります。
 
 デプロイが成功裏に完了すると、Live URL をクリックしてウェブサイトを確認することができます。
-![railway배포](https://github.com/user-attachments/assets/952c8265-062a-40a9-b28d-11c5832ac10c)
+![railway배포-1](https://github.com/user-attachments/assets/16f2577b-468d-4036-9e12-5ab1057c8944)
+**▲ 蛍光ファンで強調した部分をクリックすると、デプロイされたウェブサイトを確認できます。**
+
+![배포-1](https://github.com/user-attachments/assets/1ac59fa6-32a1-47ef-ae7d-b94a0617f88f)
+**▲ https://myapp.railway.app形式のURLが確認できます。**
+
+### **8. Rails サーバーの起動**
+開発環境で Rails サーバーを起動するには:
+
+```bash
+bundle exec rails server
+```
+
+ローカル環境でアプリにアクセスするには、ブラウザで以下の URL を開いてください。
+
+```bash
+http://localhost:3000
+```
