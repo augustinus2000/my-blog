@@ -102,6 +102,25 @@ bundle exec rails -v
 Rails 7.2.2.1
 ```
 
+### **4. データベースのセットアップ**
+このプロジェクトには **既にデータベースファイル (`db/`) が含まれています**。  
+そのため、新しくデータベースを作成する必要はありません。  
+
+しかし、環境に応じて **マイグレーションの適用が必要な場合があります**。  
+以下のコマンドを実行してください。
+
+```bash
+bundle exec rails db:migrate
+```
+
+(オプション) 初期データを追加する場合:
+
+```bash
+bundle exec rails db:seed
+```
+もし db/migrate/ に新しいマイグレーションファイルが存在しない場合、このコマンドは何も変更しません。
+
+
 Things you may want to cover:
 
 * Ruby version
