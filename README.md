@@ -60,7 +60,7 @@ ruby -v
 gem install bundler
 ```
 
-##### Bundler のバージョンを確認するには:
+Bundler のバージョンを確認するには:
 
 ```bash
 bundle -v
