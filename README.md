@@ -29,21 +29,26 @@ Rails コマンドを実行する際には `bundle exec` を付ける必要が�
 ```bash
 git clone https://github.com/augustinus2000/my-blog.git
 cd my-blog
+```
 
 ### **2. Ruby のバージョンを適用**
 このプロジェクトは rbenv を使用して、指定した Ruby バージョンを適用します。
 
-'''bash
+```bash
 rbenv local 3.2.2  # プロジェクトディレクトリ内の Ruby バージョンを指定
+```
 
 バージョンが正しく適用されたか確認:
 
-'''bash
+```bash
 ruby -v
+```
 
 出力例:
-'''css ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x86_64-linux]
 
+```
+css ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x86_64-linux]
+```
    
 Things you may want to cover:
 
