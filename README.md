@@ -49,7 +49,59 @@ ruby -v
 ```
 css ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x86_64-linux]
 ```
-   
+
+### **3. Bundler のセットアップ**
+このプロジェクトでは `Bundler` を使用して RubyGems の依存関係を管理します。
+
+#### **(1) Bundler のインストール**
+まず、Bundler がインストールされているか確認し、ない場合はインストールします。
+
+```bash
+gem install bundler
+```
+
+##### Bundler のバージョンを確認するには:
+
+```bash
+bundle -v
+```
+
+#### **(2) Gemfile の作成**
+もし Gemfile が存在しない場合、以下のコマンドで作成します。
+
+```bash
+bundle init
+```
+
+その後、Gemfile を開いて以下の内容を追加または変更してください。
+
+```bash
+gem "rails", "~> 7.2.2", ">= 7.2.2.1"
+```
+
+#### **(3) Rails のインストール**
+次に、指定されたバージョンの Rails をインストールします。
+
+```bash
+bundle install
+```
+
+bundle install を実行すると Gemfile.lock が作成され、指定されたバージョンの Rails がインストールされます。
+
+#### **(4) Rails の動作確認**
+
+Rails が正しくインストールされたか確認するには、次のコマンドを実行してください。
+
+```bash
+bundle exec rails -v
+```
+
+出力例:
+
+```nginx
+Rails 7.2.2.1
+```
+
 Things you may want to cover:
 
 * Ruby version
