@@ -129,9 +129,7 @@ bundle exec rails db:seed
 bundle exec rails test
 ```
 
-### **6. サービス**
-
-### **7. デプロイ方法**
+### **6. デプロイ方法**
 このプロジェクトは Railway を使用してデプロイできます。
 
 #### **(1) Railway CLI のインストール**
@@ -164,8 +162,7 @@ railway up
 **▲ `https://myapp.railway.app` 形式のURLが確認できます。**
 
 
-
-### **8. Rails サーバーの起動**
+### **7. Rails サーバーの起動**
 開発環境で Rails サーバーを起動するには:
 
 ```bash
@@ -177,3 +174,14 @@ bundle exec rails server
 ```bash
 http://localhost:3000
 ```
+
+## **ブログの紹介**
+
+### **ホーム画面**
+![홈화면](https://github.com/user-attachments/assets/d9f5d54b-5919-4692-ae90-11b8666341da)
+**▲ これはブログのホーム画面です。**
+
+### **ユーザー登録 (Sign Up)**
+![회원가입](https://github.com/user-attachments/assets/fb544781-4f1b-419a-a355-0a9b37be4c83)
+**▲ 画面右上の「Sign up」ボタンをクリックすると、新規登録ページに遷移します。ここで名前・メールアドレス・パスワードを入力して登録できます。**
+
