@@ -183,7 +183,7 @@ http://localhost:3000
 
 ### **2. About画面**
 ![image](https://github.com/user-attachments/assets/a61da36b-c6f7-457e-9a8c-175cf8128c34)
-About画面では私の簡単な紹介が出ています。
+**▲ About画面では私の簡単な紹介が出ています。**
 
 ### **3. ユーザー登録 (Sign Up)**
 ![회원가입](https://github.com/user-attachments/assets/fb544781-4f1b-419a-a355-0a9b37be4c83)
