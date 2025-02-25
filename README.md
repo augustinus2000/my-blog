@@ -178,7 +178,7 @@ http://localhost:3000
 ## **ブログの紹介**
 
 ### **1. ホーム画面**
-![홈화면](https://github.com/user-attachments/assets/d9f5d54b-5919-4692-ae90-11b8666341da)
+![홈화면](https://github.com/user-attachments/assets/2d68a7d9-00e2-471f-92e7-8136eb90d404)
 **▲ これはブログのホーム画面です。**
 
 ### **2. About画面**
