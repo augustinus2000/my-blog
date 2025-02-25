@@ -208,7 +208,7 @@ http://localhost:3000
 3. **ユーザー情報を変更する** (`Edit Account`)
 4. **ログアウトする** (`Sign Out`)
 
-### **6. ユーザー情報を変更する(`Edit Account`) 8**
+### **6. ユーザー情報を変更する(`Edit Account`)**
 ![Edit account](https://github.com/user-attachments/assets/c103a5c2-74eb-4095-a523-a8a24369c3bc)
 ▲ ドロップダウンメニューのEdit Accountボタンを押すと、上記の画面に移動します。 ここでユーザーの名前、パスワードを変更することもできますし、アカウントを削除することもできます。
 
