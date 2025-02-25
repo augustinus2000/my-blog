@@ -250,4 +250,11 @@ http://localhost:3000
 ![image](https://github.com/user-attachments/assets/d0d5d7e4-5349-4eba-b364-406d85ca6c07)
 ▲ 投稿と同様に、コメントの削除もコメントの作成者のみが行うことができます。
 
-
+### **9. モバイル環境における動作**
+![image9](https://github.com/user-attachments/assets/80fea349-1293-4776-9f8c-f4d47d0effaa)
+![image8](https://github.com/user-attachments/assets/44e730e4-b26b-44a7-bbc6-2cff44a40397)
+![image7](https://github.com/user-attachments/assets/69ef8107-2b10-485c-a61b-2c7d7ecdf61d)
+![image5](https://github.com/user-attachments/assets/3d434f71-a3fc-4315-a644-3faa8cc38952)
+![image4](https://github.com/user-attachments/assets/88864a6e-d935-4baa-8ee3-7892be975a3e)
+![image3](https://github.com/user-attachments/assets/a017cdc2-af54-418a-bdd1-981665216e31)
+![image2](https://github.com/user-attachments/assets/5fea5e7a-2f5c-4823-bad2-3e999bcb2d2f)
