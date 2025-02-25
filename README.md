@@ -185,3 +185,18 @@ http://localhost:3000
 ![회원가입](https://github.com/user-attachments/assets/fb544781-4f1b-419a-a355-0a9b37be4c83)
 **▲ 画面右上の「Sign up」ボタンをクリックすると、新規登録ページに遷移します。ここで名前・メールアドレス・パスワードを入力して登録できます。**
 
+### **ログイン**
+![로그인](https://github.com/user-attachments/assets/84a0ddad-11bb-4941-911f-7a951867ba2a)
+**▲既にユーザー登録がされている場合は、「Login」ボタンをクリックしてログインすることができます。**
+
+![로그인 홈화면](https://github.com/user-attachments/assets/77f64416-4ad9-4f3e-9603-f83a302796ce)
+**▲ログインすると、ホーム画面右上にユーザー名が表示されます。**
+
+### **ユーザー ドロップダウンメニュー (User Dropdown Menu)**
+画面の右上にある **ユーザー名の横の矢印** をクリックすると、  
+以下のメニューが表示されます。
+![로그인 드롭바](https://github.com/user-attachments/assets/3461a5d1-2c45-46b0-884e-2d97b5246453)
+📌 **ドロップダウンメニューでできること**
+1. **新しい投稿を作成する** (`New Post`)
+2. **ユーザー情報を変更する** (`Edit Account`)
+3. **ログアウトする** (`Sign Out`)
