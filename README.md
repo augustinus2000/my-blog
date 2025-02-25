@@ -160,7 +160,7 @@ railway up
 **▲ 蛍光ファンで強調した部分をクリックすると、デプロイされたウェブサイトを確認できます。**
 
 ![배포-1](https://github.com/user-attachments/assets/1ac59fa6-32a1-47ef-ae7d-b94a0617f88f)
-**▲ https://myapp.railway.app形式のURLが確認できます。**
+**▲ "https://myapp.railway.app"形式のURLが確認できます。**
 
 ### **8. Rails サーバーの起動**
 開発環境で Rails サーバーを起動するには:
