@@ -3,15 +3,7 @@ class CommentsController < ApplicationController
     before_action :set_post
   
     def create
-      # @post = Post.find(params[:post_id])
-      
-      @comment = if params[:comment][:parent_id].present?
-                   parent_comment = Comment.find(params[:comment][:parent_id])
-                   parent_comment.replies.build(comment_params)
-                 else
-                   @post.comments.build(comment_params)
-                 end
-    
+      @comment = @post.comments.build(comment_params) # ✅ 게시물에 댓글 생성
       @comment.user = current_user
     
       if @comment.save
@@ -21,12 +13,17 @@ class CommentsController < ApplicationController
       end
     end
     
+    
   
     def destroy
-      # @post = Post.find(params[:post_id])
       @comment = @post.comments.find(params[:id])
-      @comment.destroy
-      redirect_to post_path(@post)
+    
+      if @comment.user == current_user
+        @comment.destroy
+        redirect_to post_path(@post), notice: "Comment deleted successfully."
+      else
+        redirect_to post_path(@post), alert: "You are not authorized to delete this comment."
+      end
     end
   
     private
