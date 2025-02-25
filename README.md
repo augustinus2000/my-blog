@@ -18,6 +18,14 @@ https://medium.com/jungletronics/a-rails-blog-in-vs-code-quick-start-5c3173191a6
 - **JavaScript ランタイム**: Node.js
 - **パッケージマネージャー**: Yarn
 
+## 設定
+
+1. リポジトリをクローンします:
+
+   ```bash
+   git clone https://github.com/augustinus2000/my-blog.git
+   cd my-blog
+   
 Things you may want to cover:
 
 * Ruby version
