@@ -6,6 +6,13 @@
 
 https://medium.com/jungletronics/a-rails-blog-in-vs-code-quick-start-5c3173191a64
 
+## 開発環境 (Development Environment)
+
+このプロジェクトは以下の環境で開発されています。
+
+- **OS**: Ubuntu 20.04 
+- **IDE**: Visual Studio Code 
+
 ## Ruby および Rails のバージョン
 
 - **Ruby**: 3.2.2
