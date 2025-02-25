@@ -13,7 +13,7 @@ https://medium.com/jungletronics/a-rails-blog-in-vs-code-quick-start-5c3173191a6
 
 ## システム依存関係
 
-- **データベース**: SQLite3（開発・テスト環境）
+- **データベース**: SQLite3（開発・テスト環境） / PostgreSQL（Railway での本番環境）
 - **Webサーバー**: Puma
 - **JavaScript ランタイム**: Node.js
 - **パッケージマネージャー**: Yarn
