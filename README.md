@@ -113,6 +113,7 @@ Rails 7.2.2.1
 bundle exec rails db:migrate
 ```
 
+
 (オプション) 初期データを追加する場合:
 
 ```bash
@@ -120,24 +121,39 @@ bundle exec rails db:seed
 ```
 もし db/migrate/ に新しいマイグレーションファイルが存在しない場合、このコマンドは何も変更しません。
 
+### **5. テストの実行方法**
+このプロジェクトには Rails の標準テストフレームワーク が含まれています。
+以下のコマンドでテストを実行できます。
 
-Things you may want to cover:
+```bash
+bundle exec rails test
+```
 
-* Ruby version
+### **6. サービス**
 
-* System dependencies
+### **7. デプロイ方法**
+このプロジェクトは Railway を使用してデプロイできます。
 
-* Configuration
+#### **(1) Railway CLI のインストール**
+まず、Railway CLI をインストールしてください。
 
-* Database creation
+```bash
+npm install -g @railway/cli
+```
 
-* Database initialization
+#### **(2) Railway にログイン**
 
-* How to run the test suite
+```bash
+railway login
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+#### **(3) デプロイの実行**
 
-* Deployment instructions
+```bash
+railway up
+```
 
-* ...
+環境変数を設定する手順が追加される場合があります。
 
+デプロイが成功裏に完了すると、Live URL をクリックしてウェブサイトを確認することができます。
+![railway배포](https://github.com/user-attachments/assets/952c8265-062a-40a9-b28d-11c5832ac10c)
