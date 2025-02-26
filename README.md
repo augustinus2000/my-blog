@@ -12,6 +12,11 @@ https://medium.com/jungletronics/a-rails-blog-in-vs-code-quick-start-5c3173191a6
 
 - **OS**: Ubuntu 20.04 
 - **IDE**: Visual Studio Code 
+- **Backend**: Ruby on Rails(サーバサイドレンダリング方式）
+- **Frontend**: ERB(Embedded Ruby), Bootstrap (CSS)
+- **デプロイ·プラットフォーム**: Railway
+- **認証システム**: Devise (ログイン、会員登録、パスワード再設定)
+- **ファイルアップロード**: Active Storage
 
 ## Ruby および Rails のバージョン
 
@@ -22,8 +27,6 @@ https://medium.com/jungletronics/a-rails-blog-in-vs-code-quick-start-5c3173191a6
 
 - **データベース**: SQLite3（開発・テスト環境） / PostgreSQL（Railway での本番環境）
 - **Webサーバー**: Puma
-- **JavaScript ランタイム**: Node.js (JavaScriptコードを実行できるようにするランタイム)
-- **パッケージマネージャー**: Yarn (JavaScriptライブラリを管理するパッケージマネージャ)
 
 ## 設定 (セットアップ手順)
 
