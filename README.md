@@ -1,4 +1,4 @@
-# my-blog
+# Blog with Rails
 
 This repository contains a blog application built with **Ruby on Rails**.
 
