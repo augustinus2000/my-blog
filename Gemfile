@@ -66,6 +66,6 @@ group :test do
 end
 
 
-gem "spring", "~> 4.2"
+gem "spring", "~> 4.3"
 
 gem 'pg'
